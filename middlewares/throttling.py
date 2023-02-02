@@ -1,9 +1,10 @@
 import asyncio
 from aiogram import types, Dispatcher
-from aiogram.dispatcher import DEFAULT_RATE_LIMIT
 from aiogram.dispatcher.handler import current_handler, CancelHandler
 from aiogram.dispatcher.middlewares import BaseMiddleware
 from aiogram.utils.exceptions import Throttled
+
+DEFAULT_RATE_LIMIT = 0
 
 
 class ThrottlingMiddleware(BaseMiddleware):
